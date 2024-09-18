@@ -1,0 +1,16 @@
+/* dark-mode.css */
+
+/* Estilos para el modo oscuro */
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1e1e1e;
+}
+
+button {
+    background-color: #fff;
+    color: #000;
+}

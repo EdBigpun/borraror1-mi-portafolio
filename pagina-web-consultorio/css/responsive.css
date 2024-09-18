@@ -1,0 +1,118 @@
+/* Estilos generales para todos los dispositivos */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para dispositivos pequeños ( pantallas de hasta 600px) */
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+.menu {
+    display: none;
+}
+
+.menu-button {
+    display: block;
+}
+
+.content {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.sidebar {
+    display: none;
+}
+.main-content {
+    width: 100%;
+    }
+}
+
+/* Estilos para dispositivos medianos (pantalla de hasta 900px) */
+
+@media screen and (max-width: 900px) {
+    .sidebar {
+        width: 100%;
+        display: none;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .header {
+        text-align: center;
+    }
+}
+
+/* Estilos para dispositivos grandes (pantallas de mas de 900px) */
+
+@media screen and (min-width: 900px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .sidebar {
+        width: 25%;
+        display: block;
+        float: left;
+    }
+
+    .main-content {
+        width: 75%;
+        float: left;
+    }
+
+    .header {
+        text-align: left;
+    }
+}
+
+/* Flexbox para contenedores */
+
+@media screen and (max-width: 600px) {
+    .flex.container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-item {
+        flex: 1;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .flex.container {
+        display: flex;
+        flex-direction: row;
+        flex-direction: wrap;
+    }
+
+    .flex-item {
+        flex: 1 1 200px;
+        margin: 10px;
+    }
+}

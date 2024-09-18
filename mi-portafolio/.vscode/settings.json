@@ -1,0 +1,7 @@
+{
+    "material-icon-theme.activeIconPack": "angular",
+    "extensions.closeExtensionDetailsOnViewChange": false,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.guides.bracketPairs": true,
+    "emmet.triggerExpansionOnTab": true
+}

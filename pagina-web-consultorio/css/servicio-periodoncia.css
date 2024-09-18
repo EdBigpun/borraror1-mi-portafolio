@@ -1,0 +1,239 @@
+@import url(normalize.css);
+
+@import url(reset.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap"); /* fuentes */
+
+body { /* estilos generales de la pagina */
+    font-family: 'Roboto', sans-serif;
+    background-color: #87ceeb;
+    color: #333;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.menu { /* posición del menu */
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* posición del menu */
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu ul li {
+    text-transform: uppercase; /* tamaño letra del menu */
+    color: #007bff;
+    font-weight: bold;
+    font-size: 20px; /* tamaño letra del menu */
+    margin-right: 28px; /* espacio entre palabras del menu */
+}
+
+.menu ul li a { /* enlace dentro del li tendrá estilo de hover */
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.header {
+    background-color: #bbb;
+}
+
+.cabecera {
+    text-align: center;
+    background: #b0ddfd; /* color de letra donde dice clínica */
+}
+
+.cabecera h1{
+    color: #5bc0de; /* color de la letra donde dice clínica */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cabecera p {
+    color: #5bc0de; /* color de letra sonrisas */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cabecera img {
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 3em;
+    margin: 1em;
+    margin-top: 6%;
+}
+
+.imagen-periodoncia { /* imagen */
+    width: 30%;
+    float: left;
+    padding-left: 10px;
+    box-shadow: 10px 10px 15px 15px rgb(0, 0, 0, 0.5);
+}
+
+/* aquí tentativamente puede ir un color de fondo */
+
+.principal p {
+    margin: 40px;
+    font-size: 24px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 4em;
+}
+
+.principal em {
+    font-weight: bold;
+}
+
+.horarios {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #8db1ca; /* color header */
+}
+
+.horarios h2 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.horario {
+    display: flex;
+    align-items: center;
+}
+
+.horario i {
+    font-size: 24px;
+    margin-right: 10px;
+    margin-bottom: 0.2em;
+}
+
+.horario span {
+    font-weight: bold;
+}
+
+.nota {
+    display: flex;
+    align-items: center;
+}
+
+.nota i {
+    font-size: 24px;
+    margin-right: 10px;
+    margin-bottom: 0.2em;
+}
+
+.nota span {
+    font-weight: bold;
+}
+
+.ubicacion-nuestra {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-size: 28px;
+}
+
+.contactenos {
+    text-align: left; /* aquí es donde va ciudad, dirección, etc. */
+    font-size: 16px;
+    line-height: 1.6; /* altura entre líneas */
+    margin-top: 1%;
+    margin-bottom: 2%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mapa {
+    padding: 3em; /* mapa en el centro */
+}
+
+.mapa p {
+    margin: 0 0 1em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.video {
+    width: 560px;
+    margin: 1em auto;
+}
+
+.video p {
+    margin: 0 0 1em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.container {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container p {
+    margin-bottom: 1%;
+}
+
+.container a {
+    margin-right: 20px; /* espacio entre logos */
+}
+
+.container a:last-child {
+    margin-right: 0; /* elimina espacio que había en logos */
+}
+
+.whatsapp-float { /* posiciona el boton en la esquina inferior derecha */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.whatsapp-float img { /* ajusta el tamaño del icono */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px, opx, 10px, rgb(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img:hover { /* efecto hover para agrandar el icono */
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    background: url(img/azul-degradado-banner.jpg);
+    padding: 4px;
+}
+
+.derechos-reservados {
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 10px;
+}
